@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {Palette} from "./Palette";
+import '../css/style.css';
+
 
 export const ColorPalette = () => {
     const [color, setColor] = useState('red');
@@ -8,13 +10,17 @@ export const ColorPalette = () => {
     }
     return (
         <>
-            <h3 style={{color: color}}>color: red</h3>
-            <select onChange={handleChange}>
-                <option value={'red'}>red</option>
-                <option value={'green'}>green</option>
-                <option value={'blue'}>blue</option>
-            </select>
-            <Palette color={color}/>
+            <div>
+                <div>
+                    <select onChange={handleChange}>
+                        <option value={'red'}>red</option>
+                        <option value={'green'}>green</option>
+                        <option value={'blue'}>blue</option>
+                    </select>
+                </div>
+                <Palette color={color}/>
+            </div>
+
         </>
     )
 }
