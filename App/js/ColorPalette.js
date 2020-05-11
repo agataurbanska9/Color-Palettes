@@ -24,6 +24,7 @@ export const ColorPalette = () => {
                 <option value={'green'}>green</option>
                 <option value={'blue'}>blue</option>
             </select>
+
         </>
     )
 }
