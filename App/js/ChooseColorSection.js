@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import {Colors} from "./Colors";
+import {Palette} from "./Palette";
 import '../css/style.css';
 
-
 export const ChooseColorSection = () => {
-    const [color, setColor] = useState('red');
+    const [color, setColor] = useState('warm');
     const handleChange = (e) => {
         setColor(e.target.value);
     }
@@ -15,13 +14,15 @@ export const ChooseColorSection = () => {
                     <p>Choose your theme</p>
                     <div>
                         <select onChange={handleChange}>
-                            <option value={'red'}>red</option>
-                            <option value={'green'}>green</option>
-                            <option value={'blue'}>blue</option>
+                            <option value={'warm'}>warm</option>
+                            <option value={'azure'}>azure</option>
+                            <option value={'grassy'}>grassy</option>
+                            <option value={'funky'}>funky</option>
+                            <option value={'office'}>office party</option>
                         </select>
                     </div>
                 </div>
-                <Colors color={color}/>
+                <Palette color={color}/>
             </div>
 
         </>
