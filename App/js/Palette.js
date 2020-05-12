@@ -6,18 +6,14 @@ export const Palette = ({color}) => {
 
     const warmColors = ['lightyellow', 'snow', 'ghostwhite', 'seashell', 'floralwhite', 'ivory', 'beige', 'oldlace', 'antiquewhite', 'cornsilk', 'blanchedalmond', 'bisque'];
     const coolColors = ['lightcyan', 'honeydew', 'mintcream', 'whitesmoke', 'lavenderblush', 'azure', 'aliceblue', 'linen', 'ghostwhite', 'lightcyan'];
-
-    const warm1 = ['salmon', 'darksalmon', 'lightsalmon', 'pink', 'lightpink', 'darkorange', 'orange', 'gold', 'yellow', 'thistle', 'plum', 'burlywood', 'tan'];
-    const warm2 = ['indianred', 'crimson', 'red', 'firebrick', 'darkred', 'lightcoral', 'hotpink','coral', 'tomato', 'orangered', 'saddlebrown', 'brown', 'maroon', 'sienna'];
-    const azure1 = ['powderblue', 'lightblue', 'lightskyblue', 'lightsteelblue', 'skyblue', 'rosybrown', 'dimgray', 'aquamarine', 'mediumaquamarine', 'paleturquoise', 'mediumturquoise', 'springgreen', 'darkturquoise'];
-    const azure2 = ['cornflowerblue', 'dodgerblue', 'royalblue', 'steelblue', 'blue', 'mediumblue', 'darkblue', 'navy', 'midnightblue', 'slateblue', 'darkslateblue', 'indigo', 'lightseagreen', 'darkcyan', 'cadetblue', 'teal' ];
+    const warm1 = ['salmon', 'darksalmon', 'lightsalmon', 'pink', 'lightpink', 'orange', 'gold', 'yellow', 'thistle', 'plum', 'burlywood', 'tan'];
+    const warm2 = ['indianred', 'crimson', 'red', 'firebrick', 'darkred', 'lightcoral', 'hotpink','coral', 'tomato', 'orangered', 'saddlebrown', 'brown', 'maroon', 'sienna',  'darkorange'];
+    const azure1 = ['cadetblue', 'powderblue', 'lightblue', 'lightskyblue', 'lightsteelblue', 'skyblue', 'rosybrown', 'dimgray', 'aquamarine', 'mediumaquamarine', 'paleturquoise', 'mediumturquoise', 'springgreen', 'darkturquoise'];
+    const azure2 = ['cornflowerblue', 'dodgerblue', 'royalblue', 'steelblue', 'blue', 'mediumblue', 'darkblue', 'navy', 'midnightblue', 'slateblue', 'darkslateblue', 'indigo', 'lightseagreen', 'darkcyan', 'teal' ];
     const funky1 = ['palevioletred', 'darkorange', 'darkkhaki', 'slateblue', 'palegreen', 'seagreen', 'rosybrown', 'chocolate', 'maroon', 'gainsboro', 'aqua'];
     const funky2 = ['deeppink', 'crimson', 'mediumvioletred', 'yellow' , 'fuchsia', 'lime', 'mediumspringgreen', 'teal', 'goldenrod', 'navy', 'limegreen' ];
     const office2 = ['darkkhaki', 'darkolivegreen', 'saddlebrown', 'sienna'];
     const office1 = ['gray', 'dimgray', 'lightslategray', 'slategray', 'darkslategray', 'black'];
-
-    // const red1 = ['lightsalmon', 'salmon', 'darksalmon', 'lightcoral', 'indianred', 'coral', 'orange', 'darkorange', 'tomato', 'peachpuff', 'thistle', 'palegoldenrod'];
-    // const red2 = ['crimson', 'firebrick', 'darkred', 'orangered', 'maroon', 'brown', 'sienna', 'saddlebrown', 'goldenrod', 'chocolate', 'darkmagenta', 'darkviolet', 'sandybrown', 'gold'];
     const grassy1 = ['lawngreen', 'chartreuse', 'limegreen', 'lime', 'greenyellow', 'yellowgreen', 'springgreen', 'lightgreen', 'palegreen', 'darkkhaki'];
     const grassy2 = ['forestgreen', 'green', 'darkgreen', 'darkseagreen', 'mediumseagreen', 'seagreen', 'olive', 'darkolivegreen', 'olivedrab', 'darkslategrey'];
     const getRandomColor = (array) => {
