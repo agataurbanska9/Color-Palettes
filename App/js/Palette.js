@@ -13,8 +13,8 @@ export const Palette = ({color}) => {
     const azure2 = ['cornflowerblue', 'dodgerblue', 'royalblue', 'steelblue', 'blue', 'mediumblue', 'darkblue', 'navy', 'midnightblue', 'slateblue', 'darkslateblue', 'indigo', 'lightseagreen', 'darkcyan', 'cadetblue', 'teal' ];
     const funky1 = ['palevioletred', 'darkorange', 'darkkhaki', 'slateblue', 'palegreen', 'seagreen', 'rosybrown', 'chocolate', 'maroon', 'gainsboro', 'aqua'];
     const funky2 = ['deeppink', 'crimson', 'mediumvioletred', 'yellow' , 'fuchsia', 'lime', 'mediumspringgreen', 'teal', 'goldenrod', 'navy', 'limegreen' ];
-    const office1 = ['darkkhaki', 'darkolivegreen', 'saddlebrown', 'sienna', 'brown'];
-    const office2 = ['gray', 'dimgray', 'lightslategray', 'slategray', 'darkslategray', 'black'];
+    const office2 = ['darkkhaki', 'darkolivegreen', 'saddlebrown', 'sienna'];
+    const office1 = ['gray', 'dimgray', 'lightslategray', 'slategray', 'darkslategray', 'black'];
 
     // const red1 = ['lightsalmon', 'salmon', 'darksalmon', 'lightcoral', 'indianred', 'coral', 'orange', 'darkorange', 'tomato', 'peachpuff', 'thistle', 'palegoldenrod'];
     // const red2 = ['crimson', 'firebrick', 'darkred', 'orangered', 'maroon', 'brown', 'sienna', 'saddlebrown', 'goldenrod', 'chocolate', 'darkmagenta', 'darkviolet', 'sandybrown', 'gold'];
