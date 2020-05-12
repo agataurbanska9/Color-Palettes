@@ -48,6 +48,7 @@ body {
     margin-top: 40%;
     margin-bottom: 40%;
     letter-spacing: 1px;
+    text-shadow: 0 0 1px #c0c0c0;
 }
 .box:hover {
     box-shadow: 0 0 30px -12px #000000;
