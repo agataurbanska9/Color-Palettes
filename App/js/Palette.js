@@ -31,27 +31,27 @@ export const Palette = (props) => {
         props.color==='blue' ?
             <>
             <div className={'palette'}>
-                <div className={'box'} style={{background: coolColor}}>{coolColor}</div>
-                <div className={'box'} style={{background: blueColor1}}>{blueColor1}</div>
-                <div className={'box'} style={{background: blueColor2}}>{blueColor2}</div>
+                <div className={'box'} style={{background: coolColor}}><p>{coolColor}</p></div>
+                <div className={'box'} style={{background: blueColor1}}><p>{blueColor1}</p></div>
+                <div className={'box'} style={{background: blueColor2}}><p>{blueColor2}</p></div>
             </div>
                 <ExampleBox col1={coolColor} col2={blueColor1} col3={blueColor2}/>
             </>
             : props.color==='red' ?
             <>
             <div className={'palette'}>
-                <div className={'box'} style={{background: warmColor}}>{warmColor}</div>
-                <div className={'box'} style={{background: redColor1}}>{redColor1}</div>
-                <div className={'box'} style={{background: redColor2}}>{redColor2}</div>
+                <div className={'box'} style={{background: warmColor}}><p>{warmColor}</p></div>
+                <div className={'box'} style={{background: redColor1}}><p>{redColor1}</p></div>
+                <div className={'box'} style={{background: redColor2}}><p>{redColor2}</p></div>
             </div>
                 <ExampleBox  col1={warmColor} col2={redColor1} col3={redColor2}/>
             </>
             :
             <>
             <div className={'palette'}>
-                <div className={'box'} style={{background: coolColor}}>{coolColor}</div>
-                <div className={'box'} style={{background: greenColor1}}>{greenColor1}</div>
-                <div className={'box'} style={{background: greenColor2}}>{greenColor2}</div>
+                <div className={'box'} style={{background: coolColor}}><p>{coolColor}</p></div>
+                <div className={'box'} style={{background: greenColor1}}><p>{greenColor1}</p></div>
+                <div className={'box'} style={{background: greenColor2}}><p>{greenColor2}</p></div>
             </div>
                 <ExampleBox  col1={coolColor} col2={greenColor1} col3={greenColor2}/>
             </>

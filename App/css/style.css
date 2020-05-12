@@ -28,7 +28,7 @@ body {
 }
 .option {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .option p {
     font-size: 4rem;
@@ -41,9 +41,17 @@ body {
     height: 10rem;
     margin: 0.5rem;
     box-shadow: 0 0 18px -12px #000000;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.box p {
+    margin-top: 40%;
+    margin-bottom: 40%;
+    letter-spacing: 1px;
 }
 .box:hover {
     box-shadow: 0 0 30px -12px #000000;
+    opacity: 1;
 }
 .container {
     max-width: 900px;
