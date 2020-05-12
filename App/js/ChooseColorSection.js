@@ -11,13 +11,15 @@ export const ChooseColorSection = () => {
     return (
         <>
             <div className={'header'}>
-                <h1>Choose your main color!</h1>
-                <div>
-                    <select onChange={handleChange}>
-                        <option value={'red'}>red</option>
-                        <option value={'green'}>green</option>
-                        <option value={'blue'}>blue</option>
-                    </select>
+                <div className={'option'}>
+                    <p>Choose your theme</p>
+                    <div>
+                        <select onChange={handleChange}>
+                            <option value={'red'}>red</option>
+                            <option value={'green'}>green</option>
+                            <option value={'blue'}>blue</option>
+                        </select>
+                    </div>
                 </div>
                 <Colors color={color}/>
             </div>
