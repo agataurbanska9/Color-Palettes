@@ -3,19 +3,26 @@ import {ExampleBox} from "./ExampleBox";
 import '../css/style.css';
 
 export const Palette = ({color}) => {
+//--> color arrays
+    let warmColors = [
+        {name: 'light yellow', hex: 'FFFFE0'}, {name: 'snow', hex: 'FFFAFA'},
+        {name: 'ghost white', hex: 'F8F8FF'}, {name: 'sea shell', hex: 'FFF5EE'},
+        {name: 'floral white', hex: 'FFFAF0'}, {name: 'ivory', hex: 'FFFFF0'},
+        {name: 'beige', hex: 'F5F5DC'}, {name: 'old lace', hex: 'FDF5E6'},
+        {name: 'antique white', hex: 'FAEBD7'}, {name: 'corn silk', hex: 'FFF8DC'},
+        {name: 'blanchedalmond', hex: 'FFEBCD'}, {name: 'bisque', hex: 'FFE4C4'}];
 
-    const warmColors = ['lightyellow', 'snow', 'ghostwhite', 'seashell', 'floralwhite', 'ivory', 'beige', 'oldlace', 'antiquewhite', 'cornsilk', 'blanchedalmond', 'bisque'];
-    const coolColors = ['lightcyan', 'honeydew', 'mintcream', 'whitesmoke', 'lavenderblush', 'azure', 'aliceblue', 'linen', 'ghostwhite', 'lightcyan'];
-    const warm1 = ['salmon', 'darksalmon', 'lightsalmon', 'pink', 'lightpink', 'orange', 'gold', 'yellow', 'thistle', 'plum', 'burlywood', 'tan'];
-    const warm2 = ['indianred', 'crimson', 'red', 'firebrick', 'darkred', 'lightcoral', 'hotpink','coral', 'tomato', 'orangered', 'saddlebrown', 'brown', 'maroon', 'sienna',  'darkorange'];
-    const azure1 = ['cadetblue', 'powderblue', 'lightblue', 'lightskyblue', 'lightsteelblue', 'skyblue', 'rosybrown', 'dimgray', 'aquamarine', 'mediumaquamarine', 'paleturquoise', 'mediumturquoise', 'springgreen', 'darkturquoise'];
-    const azure2 = ['cornflowerblue', 'dodgerblue', 'royalblue', 'steelblue', 'blue', 'mediumblue', 'darkblue', 'navy', 'midnightblue', 'slateblue', 'darkslateblue', 'indigo', 'lightseagreen', 'darkcyan', 'teal' ];
-    const funky1 = ['palevioletred', 'darkorange', 'darkkhaki', 'slateblue', 'palegreen', 'seagreen', 'rosybrown', 'chocolate', 'maroon', 'gainsboro', 'aqua'];
-    const funky2 = ['deeppink', 'crimson', 'mediumvioletred', 'yellow' , 'fuchsia', 'lime', 'mediumspringgreen', 'teal', 'goldenrod', 'navy', 'limegreen' ];
-    const office2 = ['darkkhaki', 'darkolivegreen', 'saddlebrown', 'sienna'];
-    const office1 = ['gray', 'dimgray', 'lightslategray', 'slategray', 'darkslategray', 'black'];
-    const grassy1 = ['lawngreen', 'chartreuse', 'limegreen', 'lime', 'greenyellow', 'yellowgreen', 'springgreen', 'lightgreen', 'palegreen', 'darkkhaki'];
-    const grassy2 = ['forestgreen', 'green', 'darkgreen', 'darkseagreen', 'mediumseagreen', 'seagreen', 'olive', 'darkolivegreen', 'olivedrab', 'darkslategrey'];
+    let coolColors = ['lightcyan', 'honeydew', 'mintcream', 'whitesmoke', 'lavenderblush', 'azure', 'aliceblue', 'linen', 'ghostwhite', 'lightcyan'];
+    let warm1 = ['salmon', 'darksalmon', 'lightsalmon', 'pink', 'lightpink', 'orange', 'gold', 'yellow', 'thistle', 'plum', 'burlywood', 'tan'];
+    let warm2 = ['indianred', 'crimson', 'red', 'firebrick', 'darkred', 'lightcoral', 'hotpink','coral', 'tomato', 'orangered', 'saddlebrown', 'brown', 'maroon', 'sienna',  'darkorange'];
+    let azure1 = ['cadetblue', 'powderblue', 'lightblue', 'lightskyblue', 'lightsteelblue', 'skyblue', 'rosybrown', 'dimgray', 'aquamarine', 'mediumaquamarine', 'paleturquoise', 'mediumturquoise', 'springgreen', 'darkturquoise'];
+    let azure2 = ['cornflowerblue', 'dodgerblue', 'royalblue', 'steelblue', 'blue', 'mediumblue', 'darkblue', 'navy', 'midnightblue', 'slateblue', 'darkslateblue', 'indigo', 'lightseagreen', 'darkcyan', 'teal' ];
+    let funky1 = ['palevioletred', 'darkorange', 'darkkhaki', 'slateblue', 'palegreen', 'seagreen', 'rosybrown', 'chocolate', 'maroon', 'gainsboro', 'aqua'];
+    let funky2 = ['deeppink', 'crimson', 'mediumvioletred', 'yellow' , 'fuchsia', 'lime', 'mediumspringgreen', 'teal', 'goldenrod', 'navy', 'limegreen' ];
+    let office2 = ['darkkhaki', 'darkolivegreen', 'saddlebrown', 'sienna'];
+    let office1 = ['gray', 'dimgray', 'lightslategray', 'slategray', 'darkslategray', 'black'];
+    let grassy1 = ['lawngreen', 'chartreuse', 'limegreen', 'lime', 'greenyellow', 'yellowgreen', 'springgreen', 'lightgreen', 'palegreen', 'darkkhaki'];
+    let grassy2 = ['forestgreen', 'green', 'darkgreen', 'darkseagreen', 'mediumseagreen', 'seagreen', 'olive', 'darkolivegreen', 'olivedrab', 'darkslategrey'];
     const getRandomColor = (array) => {
         const randomColor = array[Math.floor(Math.random()*array.length)];
         return randomColor;
@@ -38,9 +45,9 @@ export const Palette = ({color}) => {
         color==='azure' ?
             <>
             <div className={'palette'}>
-                <div className={'box'} style={{background: coolColor}}><p>{coolColor}</p></div>
-                <div className={'box'} style={{background: blueColor1}}><p>{blueColor1}</p></div>
-                <div className={'box'} style={{background: blueColor2}}><p>{blueColor2}</p></div>
+                <div className={'box'} style={{background: coolColor.name}}><p>{coolColor.name}</p></div>
+                <div className={'box'} style={{background: blueColor1.name}}><p>{blueColor1.name}</p></div>
+                <div className={'box'} style={{background: blueColor2.name}}><p>{blueColor2.name}</p></div>
             </div>
                 <ExampleBox col1={coolColor} col2={blueColor1} col3={blueColor2}/>
             </>
